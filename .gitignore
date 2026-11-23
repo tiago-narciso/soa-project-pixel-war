@@ -1,0 +1,95 @@
+# ==========================================
+# Dépendances (racine et tous les packages)
+# ==========================================
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+
+# ==========================================
+# Builds & Compilation (NestJS / TypeScript)
+# ==========================================
+dist/
+**/dist/
+build/
+**/build/
+out/
+**/out/
+*.tsbuildinfo
+**/*.tsbuildinfo
+
+# ==========================================
+# Variables d'environnement & Secrets
+# ==========================================
+.env
+**/.env
+.env.*
+**/.env.*
+# Autoriser les fichiers d'exemple
+!.env.example
+!**/.env.example
+!.env.sample
+!**/.env.sample
+
+# ==========================================
+# Monorepo & Outils de build (Turbo, Nx, etc.)
+# ==========================================
+.turbo/
+**/.turbo/
+.nx/
+.cache/
+**/.cache/
+.eslintcache
+**/.eslintcache
+
+# ==========================================
+# Tests & Couverture (Jest / Vitest)
+# ==========================================
+coverage/
+**/coverage/
+.nyc_output/
+**/.nyc_output/
+
+# ==========================================
+# Logs & Debug
+# ==========================================
+logs/
+**/logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==========================================
+# Base de données / ORM (si Prisma ou SQLite)
+# ==========================================
+*.sqlite
+*.sqlite3
+*.db
+# Décommenter si le client Prisma est généré dans un dossier custom :
+# **/prisma/generated/
+
+# ==========================================
+# Docker & Infrastructure locale
+# ==========================================
+docker-compose.override.yml
+.docker/
+
+# ==========================================
+# IDE & Éditeurs
+# ==========================================
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# ==========================================
+# Système d'exploitation
+# ==========================================
+.DS_Store
+Thumbs.db
